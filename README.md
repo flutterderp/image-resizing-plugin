@@ -1,1 +1,1 @@
-# image-resizing-plugin
+# Image resizing plugin for Joomla! CMS
