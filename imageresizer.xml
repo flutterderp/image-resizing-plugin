@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="content" method="upgrade">
+	<name>Content - Image Resizer</name>
+	<author>Hendrix Web</author>
+	<creationDate>March 2020</creationDate>
+	<copyright>Copyright (C) 2020 Hendrix Web. All rights reserved.</copyright>
+	<licence>GNU General Public License version 3 or later; see LICENSE</licence>
+	<authorEmail>michael@hendrixweb.net</authorEmail>
+	<authorUrl>www.hendrixweb.net</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_IMAGERESIZER_XML_DESCRIPTION</description>
+
+	<scriptfile>install.plg_content_imageresizer.php</scriptfile>
+
+	<files>
+		<filename plugin="imageresizer">imageresizer.php</filename>
+		<filename>index.html</filename>
+		<filename>LICENSE</filename>
+		<folder>language</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_imageresizer.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_imageresizer.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="types" type="contenttype" multiple="true"
+					description="PLG_CONTENT_IMAGERESIZER_FIELD_TYPES_DESC"
+					label="PLG_CONTENT_IMAGERESIZER_FIELD_TYPES_LABEL" />
+
+				<field name="max_filesize" type="number" default="1024"
+					description="PLG_CONTENT_IMAGERESIZER_FIELD_MAX_FILESIZE_DESC"
+					label="PLG_CONTENT_IMAGERESIZER_FIELD_MAX_FILESIZE_LABEL" />
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
